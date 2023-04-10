@@ -1,6 +1,11 @@
+import os
 import discord
 import keyboard
- 
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN') 
+
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
  
@@ -23,5 +28,5 @@ async def on_message(message):
     else:
         await message.channel.send("Please refrain from using this channel for things other than counting or you will be terminated")
     print("done")
- 
-client.run('MTA5NDc2NDk3NzM4ODI2MTQxOA.GrcYwy.SxlSM9bNx7rITBvAq23locVSIDux9yqB6Dim24')
+print(TOKEN) 
+client.run(TOKEN)
