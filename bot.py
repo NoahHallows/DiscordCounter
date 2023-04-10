@@ -14,6 +14,7 @@ async def on_message(message):
         return
     number_up_to = message.content
     print(number_up_to)
+    print(len(number_up_to))
     try:
         number_up_to = int(number_up_to)
         number_up_to = number_up_to + 1
