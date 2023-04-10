@@ -20,4 +20,4 @@ async def on_message(message):
     keyboard.press_and_release("enter")
     #await message.channel.send(number_up_to)
  
-client.run('MTA5NDc2NDk3NzM4ODI2MTQxOA.GS_TcQ.JdVqwX7bsf5M9HlHhrdgwBvER9nbQy_pLOUgq4')
+client.run('Access token')
