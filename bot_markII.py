@@ -35,4 +35,3 @@ async def on_message(message):
         await message.channel.send("Please refrain from using this channel for things other than counting or you will be terminated")
  
 client.run(TOKEN)
-42
