@@ -1,6 +1,6 @@
 FROM python:3.14.0b1-bookworm
 
-WORKINGDIR /usr/src/app
+WORKDIR /usr/src/app
 
 COPY . .
 
